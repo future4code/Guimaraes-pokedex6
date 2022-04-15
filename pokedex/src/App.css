@@ -1,4 +1,14 @@
-.App {
-  text-align: center;
-}
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+  }
+  @media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+  
+  }
+  @media screen and (min-device-width : 1200px) {
+  
+  }
+  
+
+  
+  
 

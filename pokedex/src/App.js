@@ -1,17 +1,17 @@
 import React from 'react';
-import './App.css';
-import Router from './Router';
+import Router from './routes/Router';
+import Globalstate from './global/GlobalState'
 
 
 function App() {
   return (
-    <div className="App">
+    <Globalstate >
       
       
       <Router/>
       
       
-    </div>
+    </Globalstate>
   );
 }
 

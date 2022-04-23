@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import axios from 'axios'
 import GlobalStateContext from './GlobalStateContext'
-import { URL } from '../constants/urls'
+import { BASE_URL } from '../constants/urls'
 
 
 const GlobalState = (props) => {
@@ -13,14 +13,17 @@ const GlobalState = (props) => {
     useEffect(() => {
       getPokemonNames()
     }, [])
+
+    //console.log(pokemonNames)
    
     const getPokemonNames = () => {
+
       axios
-      .get(`${URL}`)
+      .get(`${ BASE_URL }`)
       
       .then((response) => {
         setPokemonNames(response.data.results)
-        
+       // console.log (setPokemonNames)
       } )
       .catch((error) => {
         alert(error.message)
@@ -34,11 +37,16 @@ const GlobalState = (props) => {
       const newList = [] 
 
       pokemonNames.forEach((item) => {
-     
+
+        
+      // console.log(item.url)
         axios
         .get(item.url)
+        
 
         .then((response) => {
+
+         
 
           newList.push(response.data) 
 
@@ -49,6 +57,8 @@ const GlobalState = (props) => {
                 return a.id - b.id 
             })
              setPokemons(orderedList) 
+
+             //console.log(pokemons)
           }
         })
         .catch((error) => {
@@ -72,4 +82,9 @@ const GlobalState = (props) => {
         </GlobalStateContext.Provider>
      )
 }
+
+
+    
+
+
 export default GlobalState

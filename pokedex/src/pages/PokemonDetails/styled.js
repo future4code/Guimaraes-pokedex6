@@ -3,7 +3,6 @@ import { mainPink } from '../../constants/colors'
 
 
 
-// styled PokemonDetailsScreen
 export const PokemonInfosContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);

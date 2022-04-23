@@ -27,6 +27,8 @@ const PokemonCard = ({pokemon, isPokedex}) => {
 
       const orderedPokemons = newPokemonsList.sort((a, b) => {
 
+        return  a.id - b.id 
+
       })
       
       const newPokedexList = [...pokedex, pokemon] 

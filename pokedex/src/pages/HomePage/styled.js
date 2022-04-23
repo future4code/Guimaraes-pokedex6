@@ -3,7 +3,6 @@ import { mainAntiquewhite } from '../../constants/colors'
 
 
 
-// styled PokedexScreen
 export const PokedexContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);

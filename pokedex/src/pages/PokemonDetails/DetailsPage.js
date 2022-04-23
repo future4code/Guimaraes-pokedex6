@@ -20,16 +20,26 @@ const DetailsPage = () => {
     const { name } = useParams() 
 
     const { pokemons } = useContext(GlobalStateContext) 
+
+
+    
+
+   
     
     
     useEffect(() => {
       
       const currentPokemon = pokemons.find((item) => { return item.name === name})
 
+      
+     
+
+
          setSelectedPokemon(currentPokemon) 
     }, [])
 
-
+    
+    
 
 
     return (
@@ -98,4 +108,4 @@ const DetailsPage = () => {
         </div>
      )
 }
-export default DetailsPage
+export default DetailsPage;

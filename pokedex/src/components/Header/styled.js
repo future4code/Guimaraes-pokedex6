@@ -14,3 +14,4 @@ export const TitleHeader = styled.h2`
   text-align: center;
   margin-left: 25vw;
   `
+  

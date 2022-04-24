@@ -40,6 +40,6 @@ export const ButtonDetails = styled.button` // Botão que vai para página que m
   border-radius: 5px;
   margin: 2%;
   padding: 5% 18%;
-  color: yellow;
+  color: black;
   background-color: antiquewhite;
 `

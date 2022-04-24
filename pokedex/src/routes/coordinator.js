@@ -10,3 +10,4 @@ export const goToDetailsPage =(navigate,name) =>{
 export const goToHomePage =(navigate)=>{
     navigate('/')
 }
+

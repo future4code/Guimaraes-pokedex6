@@ -1,16 +1,16 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Jenifer Kindermann Silveira
+- Francineide Teixeira
+- Diego Rigo
 
-Link do Surge: www.link.com.br
+Link do Surge: weak-scissors.surge.sh
 
 O que funciona:
-- Item 1
-- Item 2
+- Renderizacão da lista dos Pokemons
+- Adicionar Pokemons da pokedex
 
 O que não funciona: 
-- Item 3
-- Item 4
+- Botão voltar na Pokedex
+- Lista De detalhes não renderiza na Pokedex
